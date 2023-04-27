@@ -23,3 +23,9 @@ The API looks like this (I am using C99 `<stdint.h>`-style annotated types):
  * @param msgsize : msg-length in bytes
  * @param output  : writeable buffer with at least 20 bytes available
  */
+void hmac_sha1(const uint8_t* key, 
+               const uint32_t keysize,
+               const uint8_t* msg,
+               const uint32_t msgsize,
+                     uint8_t* output);
+```
